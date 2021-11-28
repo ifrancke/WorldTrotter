@@ -95,56 +95,7 @@
         <!--Map-->
         <scene sceneID="M4C-U5-huo">
             <objects>
-                <viewController id="IFS-Fw-Ius" sceneMemberID="viewController">
-                    <stackView key="view" opaque="NO" contentMode="scaleToFill" axis="vertical" id="d2X-80-0dq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-H7-ev2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="540"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="540" id="PxK-Lw-Opd"/>
-                                </constraints>
-                            </mapView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kdP-9z-Yya">
-                                <rect key="frame" x="0.0" y="540" width="375" height="40"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Points of Interest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lja-6H-JOq">
-                                        <rect key="frame" x="0.0" y="0.0" width="318" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="ROW-kW-sPv"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQR-4V-pCr">
-                                        <rect key="frame" x="326" y="0.0" width="51" height="40"/>
-                                    </switch>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Vb-nO-KiE">
-                                <rect key="frame" x="0.0" y="580" width="375" height="40"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3T-hP-tB8">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="3yw-jz-Yb6"/>
-                                        </constraints>
-                                        <state key="normal" title="Find Me"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4l-rg-Gum">
-                                <rect key="frame" x="0.0" y="620" width="375" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Eeu-IY-UN5"/>
-                    </stackView>
+                <viewController id="IFS-Fw-Ius" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="nGk-rp-QHG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -158,6 +109,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OaT-H6-GXE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gHa-hk-ufX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
