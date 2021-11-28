@@ -7,9 +7,24 @@
 //
 
 import UIKit
+import MapKit
+
 class MapViewController: UIViewController {
+    @IBOutlet var mapView : MKMapView!
+    @IBOutlet var poiSwitch : UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("MapViewController loaded its view.")
+    }
+    
+    @objc func poiDisplay(_ poiSwitch: UISwitch) {
+        if poiSwitch.isOn {
+            mapView.showsPointsOfInterest = false
+            poiSwitch.setOn(false, animated: true)
+        } else {
+            mapView.showsPointsOfInterest = true
+            poiSwitch.setOn(true, animated: true)
+        }
     }
 }
